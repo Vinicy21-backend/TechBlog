@@ -1,0 +1,245 @@
+/*Limpar formatações padrão*/
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 1em;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	
+}
+
+/*
+**** Layout ****
+*/
+#area-cabecalho {
+	
+	padding: 15px;
+	text-align: center;
+}
+
+#area-logo, #area-menu {
+	padding: 10px;
+}
+
+#area-principal {
+	width: 920px;
+	margin: 0 auto;
+	padding: 15px;
+}
+
+#area-postagens {
+	width: 660px;
+	float: left;
+}
+
+#area-lateral {
+	width: 240px;
+	float: right;
+}
+
+.postagem{
+	padding: 20px;
+	margin-bottom: 20px;
+	background: white;
+}
+
+.artigos {
+    display: flex; /* Define um container flexível */
+    flex-wrap: wrap; /* Permite que os artigos quebrem para a próxima linha quando não couberem mais */
+    justify-content: center; /* Centraliza os artigos horizontalmente */
+}
+
+/* Estilo para cada artigo individual */
+.artigo {
+    width: 300px; /* Largura do artigo */
+    margin: 10px; /* Margem ao redor do artigo */
+    background-color: #fff; /* Cor de fundo branca */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+
+}
+.conteudo-lateral {
+	background: white;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+.postagem-lateral {
+	font-size: 0.8em;
+	padding: 5px;
+	border-bottom: 1px dotted #CCC;
+}
+
+#rodape {
+	clear: both;
+	text-align: center;
+	padding: 15px;
+	background: blue;
+}
+
+
+
+/*
+**** Formatação do menu ****
+*/
+a {
+	text-decoration: none;	
+}
+
+a:link, a:visited {
+	color: #3b0aee;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#area-cabecalho a:link, #area-cabecalho a:visited {
+	color: red;
+	padding: 8px 12px;
+}
+
+#area-cabecalho a:hover {
+	color: #f7b600;
+	background: #FFF;
+	text-decoration: none;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+/*
+**** Formatações em geral ****
+*/
+
+
+h2 {
+	color: #f7b600;
+}
+
+h3 {
+	color: red;
+	padding: 5px;
+}
+
+.branco{
+	color: white;
+}
+
+.vermelho{
+	color: rgb(240, 16, 16);
+}
+
+.azul{
+	color: blue;
+}
+
+.black{
+	color: black;
+}
+
+.data-postagem {
+	font-size: 0.8em;
+	border-bottom: 1px solid #f4f4f4;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	display: block;
+}
+
+/* Estilos para a div de boas-vindas */
+.welcome-message {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    background-color: rgba(255, 0, 0, 0); /* Define o fundo vermelho */
+    color: rgb(255, 255, 255); /* Define a cor do texto como branco */
+    padding: 20px; /* Adiciona espaço interno para melhorar a legibilidade */
+}
+
+
+@keyframes rgbAnimation {
+  0% { color: rgb(255, 0, 0); } /* Vermelho */
+  20% { color: rgb(255, 255, 0); } /* Amarelo */
+  40% { color: rgb(0, 255, 0); } /* Verde */
+  60% { color: rgb(0, 255, 255); } /* Ciano */
+  80% { color: rgb(0, 0, 255); } /* Azul */
+  100% { color: rgb(255, 0, 255); } /* Magenta */
+}
+
+.rainbow-text {
+  animation: rgbAnimation 5s infinite;
+}
+
+
+nav.menu-lateral{
+	width: 80px;
+	height: 100%;
+	background-color: #3b0aee;
+	padding: 40px 0 40px 1%;
+	box-shadow: 3px 0 0 white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	transition: .3s;
+}
+
+nav.menu-lateral:hover{
+	width: 190px;
+}
+
+.btn-expandir{
+	width: 100%;
+	padding-left: 10px;
+}
+
+.btn-expandir > i {
+color: #fff;
+font-size: 24px;
+cursor: pointer;
+}
+
+ul{
+	height: 100%;
+	list-style-type: none;
+}
+
+ul li.item-menu{
+	transition: .2s;
+}
+
+ul li.item-menu:hover{
+	background: #e60404;
+}
+
+ul li.item-menu a{
+	color: #fff;
+	font-size: 20px;
+	padding: 20px 4%;
+	display: flex;
+	margin-bottom: 20px;
+	line-height: 40px;
+}
+
+ul li.item-menu a .link{
+	margin-left: 40px;
+}
+
+ul li.item-menu a .icon > i{
+	font-size: 30px;
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+
